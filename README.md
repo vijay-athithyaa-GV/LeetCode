@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0053-maximum-subarray](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
+| [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
+| [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
 ## Math
 |  |
 | ------- |
