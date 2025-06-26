@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
+| [0322-coin-change](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
+| [0322-coin-change](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
@@ -58,4 +60,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
