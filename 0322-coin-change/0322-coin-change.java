@@ -5,9 +5,32 @@ class Solution {
        int n = coins.length;
        int dp[][] = new int[n][amount+1];
        for(int i=0;i<n;i++)
-            Arrays.fill(dp[i],-1);
-       int ans = minCoins(n-1,coins,amount,dp);
-       return (ans==Integer.MAX_VALUE)?-1:ans;
+            Arrays.fill(dp[i],0);
+        int ans = Tabu(coins,amount,dp);
+        return (ans == Integer.MAX_VALUE)?-1:ans;
+    }
+    public int Tabu(int coins[],int amt,int dp[][]){
+        int n = coins.length;
+        for(int t=0;t<=amt;t++){
+            if(t%coins[0] == 0)
+                dp[0][t] = t/coins[0];
+            else
+                dp[0][t] = Integer.MAX_VALUE;
+        }
+
+        for(int i=1;i<n;i++){
+            for(int tar = 0;tar<=amt;tar++){
+                int nottake = dp[i-1][tar];
+                int take = Integer.MAX_VALUE;
+                if(coins[i]<=tar){
+                    int res = dp[i][tar-coins[i]];
+                    if(res!=Integer.MAX_VALUE)
+                        take = 1 + res;
+                }
+                dp[i][tar] = Math.min(take,nottake); 
+            }
+        }
+        return dp[n-1][amt];
     }
     public int minCoins(int ind,int[] coins,int amt,int dp[][]){
         if(ind == 0)
@@ -28,4 +51,5 @@ class Solution {
         dp[ind][amt] = Math.min(take,nottake);
         return dp[ind][amt];
     }
+   
 }
