@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0518-coin-change-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0518-coin-change-ii) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -32,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0518-coin-change-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0518-coin-change-ii) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 ## Math
 |  |
 | ------- |
