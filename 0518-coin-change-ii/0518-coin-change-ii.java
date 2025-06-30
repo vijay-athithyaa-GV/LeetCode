@@ -7,7 +7,7 @@ class Solution {
         for(int i=0;i<n;i++){
             Arrays.fill(dp[i],-1);
         }
-        return changeCount(n-1,coins,amount,dp);
+        return changeTab(coins,amount,dp);
     }
     public int changeCount(int ind,int[] coins,int amt,int dp[][]){
         if(ind == 0){
@@ -22,5 +22,25 @@ class Solution {
             take = changeCount(ind,coins,amt-coins[ind],dp);
         dp[ind][amt] = take+nottake;
         return dp[ind][amt];
+    }
+    //tabulation code...
+    public int changeTab(int[] coins,int amt,int dp[][]){
+        int n = coins.length;
+        for(int t=0;t<=amt;t++){
+            if(t%coins[0] == 0)
+                dp[0][t] = 1;
+            else 
+                dp[0][t] = 0;
+        }
+        for(int i=1;i<n;i++){
+            for(int t=0;t<=amt;t++){
+                int nottake = dp[i-1][t];
+                int take = 0;
+                if(coins[i] <= t)
+                    take = dp[i][t-coins[i]];
+                dp[i][t] = take+nottake;
+            }
+        }
+        return dp[n-1][amt];
     }
 }
