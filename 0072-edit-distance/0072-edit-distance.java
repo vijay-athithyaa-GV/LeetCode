@@ -24,7 +24,7 @@ class Solution {
         int n2 = s2.length();
         for(int i=0;i<=n1;i++)
             dp[i][0] = i; 
-        for(int j=0;j<=n2;j++)
+        for(int j=1;j<=n2;j++)
             dp[0][j] = j;
         for(int i=1;i<=n1;i++){
             for(int j=1;j<=n2;j++){
