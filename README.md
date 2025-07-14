@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
+| [0263-ugly-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0263-ugly-number) |
 ## Combinatorics
 |  |
 | ------- |
