@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0053-maximum-subarray](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
 ## Memoization
@@ -113,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0005-longest-palindromic-substring) |
+## Hash Table
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
 <!---LeetCode Topics End-->
