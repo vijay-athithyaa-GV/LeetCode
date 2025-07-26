@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0046-permutations](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0046-permutations) |
 | [0053-maximum-subarray](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0046-permutations](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0046-permutations) |
 | [0494-target-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0494-target-sum) |
 ## String
 |  |
