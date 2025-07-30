@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0494-target-sum) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
+| [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Binary Tree
 |  |
 | ------- |
@@ -123,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0075-sort-colors](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0075-sort-colors) |
+| [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Hash Table
 |  |
 | ------- |
@@ -132,4 +135,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0075-sort-colors) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
