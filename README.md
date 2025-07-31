@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0056-merge-intervals) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0075-sort-colors) |
 | [0120-triangle](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0048-rotate-image) |
 | [0064-minimum-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0967-minimum-falling-path-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1559-cherry-pickup-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/1559-cherry-pickup-ii) |
 ## Memoization
@@ -84,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Binary Tree
