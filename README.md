@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0048-rotate-image) |
+| [0050-powx-n](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0096-unique-binary-search-trees) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0044-wildcard-matching) |
+| [0050-powx-n](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0050-powx-n) |
 ## Two Pointers
 |  |
 | ------- |
