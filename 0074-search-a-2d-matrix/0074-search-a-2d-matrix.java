@@ -2,21 +2,19 @@ class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int n = matrix.length;
         int m = matrix[0].length;
-        for(int i=0;i<n;i++){
-           if(matrix[i][0]<=target && target<=matrix[i][m-1]){
-                return binary(matrix[i],target);
-           }
-        } 
-        return false;
+        return binary(matrix,0,(n*m)-1,target);
     }
-    public boolean binary(int[] arr,int tar){
-        int l = 0;
-        int r = arr.length-1;
+    public boolean binary(int[][] arr,int l,int r,int tar){
+        int m = arr[0].length;
+        int i = l/m;
+        int j = l%m;
         while(l<=r){
-            int mid = l+(r-l)/2;
-            if(arr[mid] == tar)
+            int mid = (l+r)/2;
+            i = mid/m;
+            j = mid%m;
+            if(arr[i][j] == tar)
                 return true;
-            else if(tar<arr[mid])
+            else if(tar<arr[i][j])
                 r = mid-1;
             else 
                 l = mid+1;
