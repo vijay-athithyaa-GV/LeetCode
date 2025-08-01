@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0169-majority-element](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0229-majority-element-ii) |
 | [0287-find-the-duplicate-number](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0416-partition-equal-subset-sum) |
@@ -138,12 +139,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0169-majority-element](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0229-majority-element-ii) |
 ## Sorting
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0229-majority-element-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -152,4 +155,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/VIJAY-ATHITHYAA/LeetCode/tree/master/0229-majority-element-ii) |
 <!---LeetCode Topics End-->
