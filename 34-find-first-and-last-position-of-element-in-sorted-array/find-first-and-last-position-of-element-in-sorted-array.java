@@ -1,17 +1,28 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int first = -1;
-        int last = -1;
-        for(int i=0;i<nums.length;i++){
-            if(target == nums[i]){
-                if(first == -1)
-                    first = i;
-                last = i;
+        int left = binary(nums,target,true);
+        int right = binary(nums,target,false);
+        return new int[]{left,right};
+    }
+    public int binary(int[] arr,int target,boolean first){
+        int l = 0;
+        int r = arr.length-1;
+        int ind = -1;
+        while(l<=r){
+            int mid = l+(r-l)/2;
+            if(target>arr[mid]){
+                l = mid+1;
+            }else if(target<arr[mid]){
+                r = mid-1;
+            }
+            else{   
+                ind = mid;
+                if(first)
+                    r = mid-1;
+                else 
+                    l = mid+1;
             }
         }
-        int sol[] = new int[2];
-        sol[0] = first;
-        sol[1] = last;
-        return sol;
+        return ind;
     }
 }
