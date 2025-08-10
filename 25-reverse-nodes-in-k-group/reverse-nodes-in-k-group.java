@@ -25,8 +25,6 @@ class Solution {
         }
 
         while(count>=k){
-            if(count<k)
-                break;
             curr = prev.next;
             nex = curr.next;
             for(int i=1;i<k;i++){
