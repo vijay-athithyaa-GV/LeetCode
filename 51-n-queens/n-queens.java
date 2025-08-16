@@ -4,14 +4,21 @@ class Solution {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> res = new ArrayList<>();
         List<String> ds = new ArrayList<>();
+        int left[] = new int[n];
+        int leftupper[] = new int[2*n-1];
+        int leftlower[] = new int[2*n-1];
+        Arrays.fill(left,0);
+        Arrays.fill(leftupper,0);
+        Arrays.fill(leftlower,0);
+
         for(int i=0;i<n;i++){
             ds.add(".".repeat(n));
         }
-        Queen(0,ds,res,n);
+        Queen(0,ds,res,n,left,leftupper,leftlower);
         return res;
     }
 
-    public void Queen(int col, List<String> ds,List<List<String>> res,int n){
+    public void Queen(int col, List<String> ds,List<List<String>> res,int n,int left[],int leftupper[],int leftlower[]){
         //base condition..
         if(col == n){
             res.add(new ArrayList<>(ds));
@@ -19,18 +26,22 @@ class Solution {
         }
 
         for(int i=0;i<n;i++){
-            if(NotAttacked(i,col,ds,n)){
+        if(left[i] == 0 && leftupper[(n-1)+(col-i)]==0 && leftlower[col+i] == 0){
                 String s = ds.get(i);
                 StringBuilder s1 = new StringBuilder(s);
                 s1.setCharAt(col,'Q');
-                String tem = s1.toString();
-                ds.set(i,tem);
+                ds.set(i,s1.toString());
+                left[i] = 1;
+                leftupper[(n-1)+(col-i)] = 1;
+                leftlower[col+i] = 1;
 
-                Queen(col+1,ds,res,n);
+                Queen(col+1,ds,res,n,left,leftupper,leftlower);
 
-                StringBuilder s2 = new StringBuilder(tem);
-                s2.setCharAt(col,'.');
-                ds.set(i,s2.toString());
+                s1.setCharAt(col,'.');
+                ds.set(i,s1.toString());
+                left[i] = 0;
+                leftupper[(n-1)+(col-i)] = 0;
+                leftlower[col+i] = 0;
             }
         }
     }
@@ -47,26 +58,26 @@ class Solution {
             c1--;
         }
         //top diagonal..
-        int c2 = col;
-        int r2 = row;
-        while(c2>=0 && r2>=0){
-            String s = ds.get(r2);
-            if(s.charAt(c2) == 'Q'){
+        c1 = col;
+        r1 = row;
+        while(c1>=0 && r1>=0){
+            String s = ds.get(r1);
+            if(s.charAt(c1) == 'Q'){
                 return false;
             }
-            c2--;
-            r2--;
+            c1--;
+            r1--;
         }
 
-        int c3 = col;
-        int r3 = row;
-        while(c3>=0 && r3<n){
-            String s = ds.get(r3);
-            if(s.charAt(c3) == 'Q'){
+        c1 = col;
+        r1 = row;
+        while(c1>=0 && r1<n){
+            String s = ds.get(r1);
+            if(s.charAt(c1) == 'Q'){
                 return false;
             }
-            c3--;
-            r3++;
+            c1--;
+            r1++;
         }
         return flg;
     }
