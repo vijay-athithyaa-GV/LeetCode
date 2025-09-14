@@ -1,22 +1,15 @@
-import java.util.*;
-
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         int n = nums.length;
-        Map<Integer,Integer> pair = new HashMap<>();
-        for(int i=0;i<n;i++){
-            if(pair.containsKey(nums[i])){
-                int val = pair.get(nums[i]);
-                pair.put(nums[i],val+1);
-            }
+        int l = 0;
+        int r = n-2;
+        while(l<=r){
+            int mid = (l+r)/2;
+            if(nums[mid] == nums[mid^1])
+                l = mid+1;
             else
-                pair.put(nums[i],1);
+                r = mid-1;
         }
-        int res = 0;
-        for(int x:pair.keySet()){
-            if(pair.get(x)==1)
-                return x;
-        }
-        return -1;
+        return nums[l];
     }
 }
