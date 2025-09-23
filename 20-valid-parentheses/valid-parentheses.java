@@ -20,7 +20,7 @@ class Solution {
                 else if(c=='}' && top=='{')
                         s1.pop();
                 else
-                    s1.push(c);
+                    return false;
             }
         }
         if(!s1.empty())
