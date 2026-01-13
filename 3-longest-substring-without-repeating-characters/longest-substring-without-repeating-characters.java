@@ -5,15 +5,22 @@ class Solution {
         int n = s.length();
         int len = 0;
         int maxlen = 0;
-        for(int i=0;i<n;i++){
-            Map<Character,Integer> map = new HashMap<>();
-            for(int j=i;j<n;j++){
-                if(map.containsKey(s.charAt(j))) break;
-                len = j-i+1;
-                maxlen = Math.max(maxlen,len);
-                map.put(s.charAt(j),1);
+        int r = 0,l = 0;
+        Map<Character,Integer> map = new HashMap<>();
+        while(r<n){
+            char c = s.charAt(r);
+            if(map.containsKey(c)){
+                if(map.get(c)>=l){
+                    l = map.get(c)+1;
+                    map.put(c,l);
+                }
             }
+            len = r-l+1;
+            maxlen = Math.max(maxlen,len);
+            map.put(c,r);
+            r++;
         }
+
         return maxlen;
     }
 }
