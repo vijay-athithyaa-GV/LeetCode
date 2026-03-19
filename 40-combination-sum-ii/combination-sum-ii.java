@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Set<List<Integer>> res = new HashSet<>();
+        List<List<Integer>> res = new ArrayList<>();
         List<Integer> sub = new ArrayList<>();
         Arrays.sort(candidates);
         comb(0,candidates,sub,target,res);
@@ -10,7 +10,7 @@ class Solution {
         return res1;
     }
 
-    public void comb(int ind,int arr[],List<Integer> sub,int tar,Set<List<Integer>> res){
+    public void comb(int ind,int arr[],List<Integer> sub,int tar,List<List<Integer>> res){
         int n = arr.length;
         if(tar == 0){
             res.add(new ArrayList<>(sub));
