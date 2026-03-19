@@ -2,13 +2,14 @@ import java.util.*;
 
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> res = new ArrayList<>();
+        Set<List<Integer>> res = new HashSet<>();
         List<Integer> sub = new ArrayList<>();
         comb(0,candidates,sub,target,res);
-        return res;
+        List<List<Integer>> res1 = new ArrayList<>(res);
+        return res1;
     }
 
-    public void comb(int ind,int arr[],List<Integer> sub,int tar,List<List<Integer>> res){
+    public void comb(int ind,int arr[],List<Integer> sub,int tar,Set<List<Integer>> res){
         int n = arr.length;
         if(ind == n-1){
             if(tar == 0){
