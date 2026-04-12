@@ -1,30 +1,29 @@
+import java.util.*;
+
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> ans = new ArrayList<>();
         int n = nums.length;
-        arrpermutate(0,nums,ans,n);
+        List<List<Integer>> ans= new ArrayList<>();
+        List<Integer> ds = new ArrayList<>();
+        boolean flag[] = new boolean[n];
+        Arrays.fill(flag,false);
+        permutate(nums,n,ds,ans,flag);
         return ans;
-
     }
-
-    public void arrpermutate(int ind,int[] nums,List<List<Integer>> ans,int n){
-        if(ind == n){
-            List<Integer> ds = new ArrayList<>();
-            for(int i=0;i<n;i++){
-                ds.add(nums[i]);
-            }
-            ans.add(ds);
+    public void permutate(int arr[],int n,List<Integer> ds,List<List<Integer>> ans,boolean[]flag){
+        if(ds.size()==n){
+            ans.add(new ArrayList<>(ds));
             return;
         }
-        for(int i=ind;i<n;i++){
-            swap(i,ind,nums);
-            arrpermutate(ind+1,nums,ans,n);
-            swap(i,ind,nums);
+
+        for(int i=0;i<n;i++){
+            if(!flag[i]){
+                flag[i] = true;
+                ds.add(arr[i]);
+                permutate(arr,n,ds,ans,flag);
+                ds.remove(ds.size()-1);
+                flag[i] = false;
+            }
         }
-    }
-    public void swap(int i,int j,int[] nums){
-        int tem = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tem;
     }
 }
