@@ -20,15 +20,15 @@ class Solution {
         Queue<TreeNode> que = new LinkedList<>();   
         if(root==null) return 0;
         que.add(root);
-        List<Integer> res = new ArrayList<>();
+        int curr = -1;
 
         while(!que.isEmpty()){
             TreeNode node = que.poll();
-            res.add(node.val);
+            curr = node.val;
             if(node.right!=null) que.add(node.right);
             if(node.left!=null) que.add(node.left);
         }
 
-        return res.get(res.size()-1);
+        return curr;
     }
 }
