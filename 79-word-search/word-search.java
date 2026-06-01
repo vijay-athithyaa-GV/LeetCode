@@ -36,9 +36,7 @@ class Solution {
                     solut(board,word,vis,i+1,j,ind+1,flag);
                     vis[i+1][j]=0;
                 }
-            
             }
-
             if(j+1<m && ind+1<wlen && vis[i][j+1]!=1){
                 if(word.charAt(ind+1) == board[i][j+1]){
                     vis[i][j+1]=1;
@@ -46,7 +44,6 @@ class Solution {
                     vis[i][j+1]=0;
                 }
             }
-
             if(i-1>=0 && ind+1<wlen && vis[i-1][j]!=1){
                 if(word.charAt(ind+1) == board[i-1][j]){
                     vis[i-1][j]=1;
@@ -65,11 +62,5 @@ class Solution {
         else{
             return;
         }
-            
-
-            
-
-            
-
     }
 }
