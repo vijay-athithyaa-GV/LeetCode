@@ -32,13 +32,17 @@ class Solution {
                 if(node.left!=null) q.add(node.left);
                 if(node.right!=null) q.add(node.right);
             }
-            if(flag){res.add(sub);
-                flag = false;
-            }else{
-                Collections.reverse(sub);
-                res.add(sub);
-                flag = true;
-            }
+            // if(flag){res.add(sub);
+            //     flag = false;
+            // }else{
+            //     Collections.reverse(sub);
+            //     res.add(sub);
+            //     flag = true;
+            // }
+            if(flag) res.add(sub);
+            else{Collections.reverse(sub);
+                res.add(sub);}
+            flag = !flag;
         }
         return res;
     }
