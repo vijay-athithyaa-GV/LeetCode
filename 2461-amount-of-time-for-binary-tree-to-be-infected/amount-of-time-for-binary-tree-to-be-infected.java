@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    Map<TreeNode,Boolean> vis = new HashMap<>();
+    Set<TreeNode> vis = new HashSet<>();
     Map<TreeNode,TreeNode> parent = new HashMap<>();
     int time = 0;
     public int amountOfTime(TreeNode root, int start) {
@@ -59,26 +59,26 @@ class Solution {
         }
         Queue<TreeNode> q1 = new LinkedList<>();
         q1.add(startNode);
-        vis.put(startNode,true);
+        vis.add(startNode);
         while(!q1.isEmpty()){
             boolean flag = false;
             int size = q1.size();
             while(size-->0){
                 TreeNode node = q1.remove();
-                if(node.left != null && !vis.containsKey(node.left)){
+                if(node.left != null && !vis.contains(node.left)){
                     q1.add(node.left); 
-                    vis.put(node.left,true);
+                    vis.add(node.left);
                     flag = true;
                 }
-                if(node.right != null && !vis.containsKey(node.right)){
+                if(node.right != null && !vis.contains(node.right)){
                     q1.add(node.right); 
-                    vis.put(node.right,true);
+                    vis.add(node.right);
                     flag = true;
                 }
                 TreeNode par = parent.get(node);
-                if(par!=null && !vis.containsKey(par)){
+                if(par!=null && !vis.contains(par)){
                     q1.add(par); 
-                    vis.put(par,true);
+                    vis.add(par);
                     flag = true;
                 }
             }
