@@ -18,6 +18,7 @@ class Solution {
         TreeNode left = low(root.left,p,q);
         TreeNode right = low(root.right,p,q);
         if(left!=null && right!=null) return root;
-        return (left!=null)?left:right;
+        if(left!=null) return left;
+        return right;
     }
 }
