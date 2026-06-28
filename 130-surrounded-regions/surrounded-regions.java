@@ -28,12 +28,12 @@ class Solution {
                 dfs(n-1,i,board,vis);
             }
         }
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                System.out.print(vis[i][j]+" ");
-            }
-            System.out.println(); 
-        }
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<m;j++){
+        //         System.out.print(vis[i][j]+" ");
+        //     }
+        //     System.out.println(); 
+        // }
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(vis[i][j]==0 && board[i][j] == 'O'){
