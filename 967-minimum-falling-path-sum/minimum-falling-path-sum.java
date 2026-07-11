@@ -4,51 +4,33 @@ class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
-
-        int[][] dp = new int[n][m];
-        for (int[] row : dp) {
-            Arrays.fill(row, Integer.MAX_VALUE);
+        int min = Integer.MAX_VALUE;
+        int dp[][] = new int[n][m];
+        for(int i=0;i<n;i++){
+            Arrays.fill(dp[i],Integer.MAX_VALUE);
         }
-
-        int ans = Integer.MAX_VALUE;
-
-        // Try every cell in the last row
-        for (int j = 0; j < m; j++) {
-            ans = Math.min(ans, findPath(n - 1, j, matrix, dp));
+        for(int i=0;i<n;i++){
+            min = Math.min(min,findPath(n-1,i,matrix,dp));
         }
-
-        return ans;
+        return min;
     }
 
-    public int findPath(int i, int j, int[][] matrix, int[][] dp) {
-
-        int m = matrix[0].length;
-
-        // Invalid column
-        if (j < 0 || j >= m) {
-            return Integer.MAX_VALUE;
+    public int findPath(int i,int j,int[][]arr,int[][]dp)
+    {   
+        int n = arr.length;
+        int m = arr[0].length;
+        if( j<0 || j>=m) return Integer.MAX_VALUE;
+        if(i == 0){
+            return arr[i][j];
         }
-
-        // Reached first row
-        if (i == 0) {
-            return matrix[0][j];
-        }
-
-        if (dp[i][j] != Integer.MAX_VALUE) {
-            return dp[i][j];
-        }
-
-        int up = findPath(i - 1, j, matrix, dp);
-        int leftDiag = findPath(i - 1, j - 1, matrix, dp);
-        int rightDiag = findPath(i - 1, j + 1, matrix, dp);
-
-        int minPrev = Math.min(up, Math.min(leftDiag, rightDiag));
-
-        // If all previous paths are invalid
-        if (minPrev == Integer.MAX_VALUE) {
-            return dp[i][j] = Integer.MAX_VALUE;
-        }
-
-        return dp[i][j] = matrix[i][j] + minPrev;
+        if(dp[i][j]!=Integer.MAX_VALUE) return dp[i][j];
+      
+        int same = findPath(i-1,j,arr,dp);
+       
+        int left = findPath(i-1,j-1,arr,dp);
+        int right = findPath(i-1,j+1,arr,dp);
+        int minVal = Math.min(same,Math.min(left,right));
+        if(minVal == Integer.MAX_VALUE) return dp[i][j] = Integer.MAX_VALUE;
+        return dp[i][j] =  minVal+arr[i][j]; 
     }
 }
