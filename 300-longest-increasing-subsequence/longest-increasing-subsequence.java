@@ -1,20 +1,34 @@
 import java.util.*;
+
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int n = nums.length;
-        int dp[][] = new int[n][n+1];
-        for(int i=0;i<n;i++) Arrays.fill(dp[i],-1);
-        return findLen(0,-1,nums,dp);
+        if(n == 0) return 0; 
+        List<Integer> tem = new ArrayList<>();
+        tem.add(nums[0]);
+        for(int i=1;i<n;i++){
+            int last = tem.get(tem.size()-1);
+            if(nums[i]>last){
+                tem.add(nums[i]);
+            }else{
+                int lb = lowerBound(0,tem.size()-1,nums[i],tem); //return the lowerbound index..
+                tem.set(lb,nums[i]);
+            }
+        }
+        return tem.size();
     }
-    public int findLen(int ind,int prev,int arr[],int[][] dp){
-        int n = arr.length;
-        if(ind == n) return 0;
-        if(dp[ind][prev+1]!=-1) return dp[ind][prev+1];
-        int max = Integer.MIN_VALUE;
-        int left = -1;
-        int right = -1;
-        if(prev == -1 ||arr[ind] > arr[prev]) left = findLen(ind+1,ind,arr,dp)+1;
-        right = findLen(ind+1,prev,arr,dp);
-        return dp[ind][prev+1] = Math.max(left,right);
+
+    public int lowerBound(int l,int r,int x,List<Integer> tem){
+        int ans = r;
+        while(l<=r){
+            int mid = (l+r)/2;
+            if(tem.get(mid) >= x){
+                ans = mid;
+                r = mid-1;
+            }else{
+                l = mid+1;
+            }
+        }
+        return ans;
     }
 }
