@@ -1,4 +1,10 @@
 import java.util.*;
+// idealogy -> 
+//1. perfrom the dip check from n-1 -> 0
+//2. swap the dip ind with the next highest element ind;
+//3. perfrom the reversing for 
+
+
 
 class Solution {
     public void nextPermutation(int[] nums) {
@@ -11,30 +17,27 @@ class Solution {
             }
         }
         if(ind == -1){
-            reverse(nums,0,n-1);
+            Arrays.sort(nums);
             return;
         }
-        for(int i=n-1;i>ind;i--){
+        for(int i=n-1;i>=ind;i--){
             if(nums[i]>nums[ind]){
                 swap(nums,i,ind);
                 break;
             }
         }
-
         reverse(nums,ind+1,n-1);
     }
-
-    public void swap(int arr[],int a,int b){
-        int tmp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = tmp;
-    }
-
-    public void reverse(int arr[],int i,int j){
-        while(i<j){
-            swap(arr,i,j);
-            i++;
-            j--;
+    public void reverse(int arr[],int l,int r){//using the two points
+        while(l<r){
+            swap(arr,l,r);
+            l++;
+            r--;
         }
+    }
+    public void swap(int arr[],int i,int j){
+        int tem = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tem;
     }
 }
