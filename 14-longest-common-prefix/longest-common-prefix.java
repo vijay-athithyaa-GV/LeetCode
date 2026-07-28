@@ -11,7 +11,7 @@ class Solution {
         for(int ind=0;ind<minsize;ind++){
             for(int i=1;i<n;i++){
                 String sub2 = strs[i];
-                if(ind < sub2.length() && sub.charAt(ind) != sub2.charAt(ind)){
+                if(sub.charAt(ind) != sub2.charAt(ind)){
                     flg = 1;
                     break;
                 }
