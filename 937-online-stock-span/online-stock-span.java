@@ -1,22 +1,29 @@
 import java.util.*;
 
-class StockSpanner {
-    List<Integer> list;
-    public StockSpanner() {
-        list = new ArrayList<>();
+class Pair{
+    int price,span;
+    Pair(int price,int span){
+        this.price = price;
+        this.span = span;
     }
-    
+}
+
+class StockSpanner {
+    Deque<Pair> dq;
+    public StockSpanner() {
+        dq = new ArrayDeque<>();
+    }
     public int next(int price) {
-        int cnt = 1;
-        for(int i=list.size()-1;i>=0;i--){
-            int ele = list.get(i);
-            if(ele<=price) cnt++;
-            else break;
+        int span = 1;
+        while(!dq.isEmpty() && dq.peekFirst().price<=price){
+            span += dq.peekFirst().span;
+            dq.pollFirst();
         }
-        list.add(price);
-        return cnt;
+        dq.addFirst(new Pair(price,span));
+        return span;
     }
     //daily collect -> return the span of stock at the current Day.
+        //need to check what is being repeating..
 
 }
 
